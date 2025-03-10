@@ -11,5 +11,6 @@ document.getElementById('add-money-box').addEventListener('click', function () {
 
 document.getElementById('add-money').addEventListener('click', function (e) {
     e.preventDefault();
-    
+    const bankEl = document.getElementById('select-bank-add');
+
 });
