@@ -8,7 +8,8 @@ loginBtn.addEventListener('click', function (event) {
 
     if (accountNumber.length === 11) {
         if (convertedPin === 1234) {
-            window.location.href = "app://main.html";
+            // window.location.href = "main.html";
+            window.location.href = window.location.origin + "/main.html";
         }
         else {
             alert('pin not valid')
