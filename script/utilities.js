@@ -24,13 +24,41 @@ function setOptionsBoxStyle(id) {
     const boxes = document.getElementsByClassName('box');
     for (const box of boxes) {
         const boxId = box.getAttribute('id');
-        if(boxId == id){
+        if (boxId == id) {
             document.getElementById(boxId).style.borderColor = 'green';
             document.getElementById(boxId).style.color = 'green';
         }
-        else{
+        else {
             document.getElementById(boxId).style.borderColor = 'black';
             document.getElementById(boxId).style.color = 'black';
         }
     }
+}
+
+// get input field value in number
+
+function getInputFieldValueNum(id) {
+    const elementById = document.getElementById(id);
+
+    const elementValue = elementById.value;
+    const valueInNumber = parseFloat(elementValue);
+    return valueInNumber;
+}
+
+// get input field value
+function getInputFieldValue(id) {
+    const elementById = document.getElementById(id);
+
+    const elementValue = elementById.value;
+    return elementValue;
+}
+
+// get element text value in number
+
+function getTextElValueInNum(id){
+    const elementById = document.getElementById(id);
+
+    const elementValue = elementById.innerText;
+    const convertValue = parseFloat(elementValue);
+    return convertValue;
 }

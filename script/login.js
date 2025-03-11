@@ -8,8 +8,6 @@ loginBtn.addEventListener('click', function (event) {
 
     if (accountNumber.length === 11) {
         if (convertedPin === 1234) {
-            // window.location.href = "main.html";
-            // window.location.href = window.location.origin + "/main.html";
             window.location.href = "/payoo-bank/main.html";
         }
         else {
@@ -19,5 +17,5 @@ loginBtn.addEventListener('click', function (event) {
     else {
         alert('number not valid')
     }
-    
+
 })

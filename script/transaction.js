@@ -7,9 +7,3 @@ document.getElementById('transaction-box').addEventListener('click', function ()
     transferSection.style.display = 'block';
 
 });
-
-
-// document.getElementById('add-money').addEventListener('click', function (e) {
-//     e.preventDefault();
-    
-// });
